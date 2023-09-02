@@ -11,7 +11,7 @@ function validarmatriz(fila,columna){
         }
         return {fila,columna,mensajevalidacion,mensajeinvalidacion};
     
-    
-}
+    }
+
 
 export default validarmatriz;
