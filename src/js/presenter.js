@@ -1,4 +1,5 @@
-import validarmatriz from "./validador.js"
+import {validarmatriz,validarposicion} from "./validador.js"
+
 const comandos = document.querySelector("#comandos");
 const ejecutar = document.querySelector("#ejecutar");
 const resultado = document.querySelector("#resultado");
@@ -35,7 +36,7 @@ ejecutar.addEventListener("click", (event) => {
   else{
     
     errores.innerHTML = `
-      <p><span id="subtitulos">Error:</span> Formato de entrada incorrecto: Ejemplo 15,15/2,2[EONS].</p>
+      <p><span id="subtitulos">Error:</span> Formato de entrada incorrecto: Ejemplo 15,15/2,2[EONS]/[IAD].</p>
       
     `;
     resultado.innerHTML ='';
