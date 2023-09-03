@@ -28,6 +28,7 @@ function validarposicion(comando) {
   let orientacion = dirección; // Almacenar la orientación en la variable orientacion
 
   for (const comando of listaComandos) {
+    //Para el comando I
     if (comando === 'I')
      {
       // Cambiar el giro a la derecha en lugar de la izquierda
@@ -41,6 +42,21 @@ function validarposicion(comando) {
         orientacion = 'N';
       }
     }
+    //para el comando D
+    if (comando === 'D')
+     {
+      // Cambiar el giro a la derecha en lugar de la izquierda
+      if (orientacion === 'N') {
+        orientacion = 'E';
+      } else if (orientacion === 'E') {
+        orientacion = 'S';
+      } else if (orientacion === 'S') {
+        orientacion = 'O';
+      } else if (orientacion === 'O') {
+        orientacion = 'N';
+      }
+    }
+
   }
 
   const posicionFinal = `${xFinal},${yFinal}${orientacion}`;
