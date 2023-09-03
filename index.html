@@ -8,13 +8,34 @@
 </head>
 <body>
   <div id="contenedor">
-  <h1>SIMULADOR DE AUTO</h1>
+    <div id="flex">
+
+      <div id="simulador">
+        <h1>SIMULADOR DE AUTO</h1>
   <form id="simulador-form">
     <label for="comandos">Ingrese Comando:</label>
     <input type="text" id="comandos" name="comandos" required>
     <button type="submit" name="ejecutar" id="ejecutar">EJECUTAR</button>
   </form>
   <p id="resultado"></p>
+      </div>
+
+      <div id="instructivo">
+        <h2>INSTRUCTIVO</h2>
+        <div id="parrafo">
+        <ol>1.- Cada sector de los comandos está divido por el caracter <span class="negrita">/</span></ol>
+        <ol>2.- El primer sector se refiere al tamaño de la matriz</ol>
+        <ol>3.- El segundo sector la posición Inicial</ol>
+        <oL>4.- El tercer sector la manera en que se moverá el autito</oL>
+        <ol>5.- Debes digitar los comando de la siguiente manera, ejemplo: </br>
+          5,5<span class="negrita">/</span>1,2N<span class="negrita">/</span>IAA</ol>
+          <ol>6.- No importa si escribes en mayusculas o minusculas</ol>
+          
+        </div>
+      </div>
+    </div>
+  
+  
   <div id="errores"></div>
 </div>
  <script type="module" src="./src/js/presenter.js"></script>

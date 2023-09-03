@@ -1,5 +1,5 @@
 #contenedor{
-    width: 400px;
+    width: 90%;
     margin: auto;
     border: 1px solid #074b8a;
     padding: 20px;
@@ -31,4 +31,27 @@ button{
     color: red;
     font-weight: bold;
     font-size: 15px;
+}
+#flex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#simulador{
+    flex: 35%;
+}
+#instructivo{
+    flex: 30%;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.negrita{
+    font-weight: bold;
+    font-size: 25px;
+
+}
+#parrafo{
+    text-align: left;
 }

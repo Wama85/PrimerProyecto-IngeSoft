@@ -78,6 +78,7 @@ function validarposicion(comando) {
       return mensajeArea=`<p id="errores">Estas fuera de la superficie.</p>`;
     }
   
+  
     
 
 
