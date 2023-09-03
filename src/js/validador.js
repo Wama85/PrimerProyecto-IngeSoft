@@ -18,8 +18,7 @@ function validarposicion(comando) {
   const [, coordenadas, listaComandos] = comando.match(/(\d+,\d+[NSEOW])(.*)/);
 
   const [x, y, dirección] = coordenadas.match(/(\d+),(\d+)([NSEOW])/).slice(1);
-  
-  
+    
   // Iniciar las coordenadas x, y, que sean enteros.
   const xInicial = parseInt(x);
   const yInicial = parseInt(y);
@@ -29,6 +28,7 @@ function validarposicion(comando) {
   let orientacion = dirección; // Almacenar la orientación en la variable orientacion
 
   for (const comando of listaComandos) {
+    let movimientoValido=true;
     //Para el comando I
     if (comando === 'I')
      {
@@ -62,16 +62,20 @@ function validarposicion(comando) {
     if (comando === 'A')
      {
       // Cambiar el giro a la derecha en lugar de la izquierda
-      if (orientacion === 'N') {
+      if (orientacion === 'N' ) {
         yFinal++;
-      } else if (orientacion === 'E') {
+      } else if (orientacion === 'E' ) {
         xFinal++;
-      } else if (orientacion === 'S') {
+      } else if (orientacion === 'S' ) {
         yFinal--;
-      } else if (orientacion === 'O') {
+      } else if (orientacion === 'O' ) {
         xFinal--;
       }
+      
     }
+  
+    
+
 
   }
 
