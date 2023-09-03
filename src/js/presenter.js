@@ -38,7 +38,7 @@ ejecutar.addEventListener("click", (event) => {
     
     errores.innerHTML = `
       <p><span id="subtitulos">Error:</span> Formato de entrada incorrecto: Ejemplo 15,15/2,2[EONS]/[IAD].</p>
-      
+     
     `;
     resultado.innerHTML ='';
   }
